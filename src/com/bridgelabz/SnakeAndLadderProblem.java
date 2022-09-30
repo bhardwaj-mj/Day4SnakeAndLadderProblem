@@ -4,11 +4,16 @@ import java.util.Scanner;
 
 public class SnakeAndLadderProblem {
     static final int START_POSITION=0;
-
+    static int snakeLadder(){
+        int player=START_POSITION;
+        int dice=(int)Math.floor(Math.random()*10)%6+1;
+        player=dice;
+        return player;
+    }
     public static void main(String[] args) {
-        Scanner sc=new Scanner(System.in);
-        System.out.print("Enter the numbers of players ");
-        int player1= sc.nextInt();
-        player1=START_POSITION;
+        int player=snakeLadder();
+        System.out.println(player);
+
+
     }
 }

@@ -25,6 +25,9 @@ public class SnakeAndLadderProblem {
             if(player<START_POSITION){
                 player=START_POSITION;
             }
+            if(player>100){
+                player=player;
+            }
             if(player==100)
                     break;
             move++;
